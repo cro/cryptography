@@ -63,7 +63,7 @@ def _extra_compile_args(platform):
                   "clang" in cmd.compiler.compiler[0])
     if is_gcc or not (platform in ["win32", "hp-ux11", "sunos5"] or
                       platform.startswith("aix")):
-        return ["-Wconversion", "-Wno-error=sign-conversion"]
+        return ["-Wconversion"]
     else:
         return []
 
