@@ -47,7 +47,7 @@ def _extra_compile_args(platform):
     revisit this.
     """
     if platform not in ["win32", "hp-ux11", "sunos5"]:
-        return ["-Wconversion", "-Wno-error=sign-conversion"]
+        return ["-Wconversion"]
     else:
         return []
 
